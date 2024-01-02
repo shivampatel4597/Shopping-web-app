@@ -1,0 +1,410 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: white;
+  font-size: 16px;
+  height: 87px;
+  padding: 35px;
+  /* border: 2px solid red; */
+}
+
+.navbar .left h3 span.word1 {
+  color: #ff4400;
+}
+.navbar .left h3:hover {
+  color: #ff4400;
+  cursor: pointer;
+}
+.navbar .left h3 {
+  font-size: 25px;
+}
+
+.center .unorderList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* color: #f0f8ff; */
+  filter: brightness(0.8);
+  gap: 50px;
+}
+
+.unorderList li {
+  list-style: none;
+  /* padding: 0px 25px; */
+  font-size: 20px;
+}
+.unorderList li a {
+  text-decoration: none;
+  color: white;
+}
+.unorderList .ls1 a {
+  color: #fd7e14;
+
+  border-bottom: 2px solid rgb(251, 242, 242);
+}
+.unorderList li a:hover {
+  color: #ff4400;
+  font-size: 25px;
+  transition: 0.6s;
+  cursor: pointer;
+  border-bottom: 2px solid rgb(251, 242, 242);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+.right i {
+  padding: 0 15px;
+  font-size: 16px;
+}
+.right i:hover {
+  color: #ff4400;
+  font-size: 20px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+/* styling first image */
+.imgContainer1 {
+  /* margin-top: 80px; */
+  width: 100%;
+  height: 650px;
+  position: relative;
+}
+.imgContainer1 img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.9);
+  object-fit: fill;
+}
+
+.overlay-content1 {
+  position: absolute;
+  width: 600px;
+
+  top: 42%;
+  left: 50px;
+  /* border: 4px solid rgb(226, 241, 11); */
+  /* color: #ff4400; */
+}
+.overlay-content1 h1 {
+  margin-top: -31px;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+}
+.overlay-content1 p {
+  font-family: "Abel", sans-serif;
+  margin-top: 30px;
+  font-size: 25px;
+  color: white;
+  font-weight: 100;
+  line-height: 40px;
+  /* filter: brightness(0.8); */
+}
+.overlay-content1 .anchor {
+  display: block;
+  width: 240px;
+  margin: 89px 0 0 0;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 200;
+  padding: 14px;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+}
+
+.overlay-content1 .anchor:hover {
+  background-color: #ff4400;
+  border: none;
+  cursor: pointer;
+}
+/* second image */
+
+.imgContainer2 {
+  width: 100%;
+  height: 650px;
+  /* background-color: aqua; */
+}
+.imgContainer2 h1 {
+  text-align: center;
+  font-size: 45px;
+  padding-top: 70px;
+}
+.overlay-content2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.overlay-content2 .box1 {
+  margin-left: 75px;
+}
+.overlay-content2 .box1 h4 {
+  margin-top: 25px;
+  font-size: 20px;
+  /* padding: 15px; */
+  padding: 15px 25px 0 0;
+}
+.overlay-content2 .box1 a {
+  text-decoration: none;
+  color: white;
+  filter: brightness(0.8);
+}
+.overlay-content2 .box1 a:hover {
+  color: #ff4400;
+}
+.overlay-content2 .box2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-content2 img {
+  width: 90%;
+  margin-top: 60px;
+}
+
+.overlay-content2 .box3 {
+  width: 400px;
+  height: 300px;
+  margin-right: 29px;
+  margin-top: 22px;
+  padding: -3px;
+  /* background-color: red; */
+}
+
+.overlay-content2 .box3 h4 {
+  font-size: 35px;
+}
+.overlay-content2 .box3 p {
+  font-family: "Abel", sans-serif;
+  font-size: 32px;
+  margin-top: 15px;
+
+  color: white;
+  filter: brightness(0.5);
+}
+/* .box3-fields .box3-fields3 {
+  
+  font-size: 20px;
+} */
+
+/* .box3-fields .box3-fields3 span {
+  margin: 0px 90px;
+  font-size: 20px;
+} */
+
+/* for table */
+table {
+  width: 100%;
+  margin-top: 15px;
+}
+th:nth-child(odd) {
+  color: rgb(200, 41, 41); /* Change this to the desired color for words */
+  font-size: 21px;
+  font-weight: 20px;
+}
+th {
+  border-bottom: 1px solid gray;
+  /* padding-right: 10px;
+  padding-left: 5px; */
+  /* width: 4px; */
+}
+tr {
+  gap: 10px;
+}
+
+/* Style for numbers in the second column of td elements */
+td:nth-child(even) {
+  color: rgb(0, 167, 47); /* Change this to the desired color for numbers */
+  font-size: 30px;
+}
+.box3 .explore {
+  margin-top: 40px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.box3 .explore a {
+  color: white;
+  filter: brightness(0.8);
+}
+.box3 .explore a:hover {
+  color: #ff4400;
+}
+#span-1 {
+  margin: 167px;
+  margin-right: 20px;
+}
+#span-3 {
+  margin: 114px;
+  margin-right: 20px;
+}
+
+/* image container3 */
+.imgContainer3 {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+.imgContainer3 .firstDiv {
+  width: 50%;
+  height: 421px;
+  background-color: aqua;
+}
+.imgContainer3 .firstDiv img {
+  width: 100%;
+  height: 100%;
+}
+.imgContainer3 .secondDiv {
+  width: 50%;
+  height: 421px;
+  background-color: #f0f8ff;
+}
+.secondDiv .secondDivContent {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  gap: 64px;
+  margin: 82px 50px;
+  /* background: green; */
+}
+.secondDivContent h1 {
+  font-size: 36px;
+}
+.secondDivContent p {
+  font-size: 30px;
+  color: white;
+  filter: brightness(0.5);
+}
+
+.secondDiv .secondDivContent a {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  filter: brightness(0.7);
+}
+
+.secondDivContent a:hover {
+  color: #ff4400;
+}
+/* 4 image container */
+.imgContainer4 {
+  width: 100%;
+  height: 800px;
+  /* background-color: orange; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.imgContainer4 .threeDivs {
+  display: flex;
+  gap: 35px;
+  margin-top: -86px;
+}
+.imgContainer4 h1 {
+  margin-top: -1px;
+  font-size: 45px;
+}
+.imgContainer4 .sameDiv img:hover {
+  /* border: 4px solid red; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  cursor: pointer;
+}
+.imgContainer4 .sameDiv h2:hover {
+  color: #ff4400;
+  cursor: pointer;
+}
+
+.sameDiv img {
+  height: 400px;
+  width: 350px;
+  margin-top: 44px;
+  background-color: #ff4400;
+  /* border: 2px solid black; */
+  /* opacity: 0.8; */
+}
+.threeDivs .sameDiv .sameDivContent {
+  padding: 17px;
+  display: flex;
+  gap: 155px;
+}
+.sameDiv h6 {
+  font-size: 13px;
+  padding-left: 19px;
+  margin-top: -16px;
+}
+
+.imgContainer4 .ah3 {
+  text-decoration: underline;
+  color: white;
+  filter: brightness(0.6);
+  margin-top: -56px;
+}
+.imgContainer4 .ah3:hover {
+  color: #fb4a0a;
+  cursor: pointer;
+}
+/* Footer css styling */
+footer {
+  width: 100%;
+  height: 320px;
+  background-color: black;
+  color: #f0f8ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .footerDiv2 {
+  height: 255px;
+  width: 400px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  line-height: 60px;
+}
+footer .footHeight {
+  line-height: 40px;
+}
+.footerDiv2 h4 {
+  margin-bottom: 10px;
+}
+footer .product-section {
+  padding-top: 42px;
+}
+
+.footerIcon .fa-brands {
+  opacity: 0.5;
+  margin-left: 9px;
+}
+
+.footerIcon .fa-brands:hover {
+  opacity: 1;
+}
